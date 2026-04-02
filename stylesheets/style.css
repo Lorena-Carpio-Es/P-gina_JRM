@@ -3483,3 +3483,8 @@ h6 { font-size: 16px; line-height: 18px; }
 #loading-overlay {
   display: none !important;
 }
+
+.title-slide {
+    color: white !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
