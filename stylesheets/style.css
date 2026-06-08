@@ -3497,3 +3497,35 @@ h6 { font-size: 16px; line-height: 18px; }
     left: 0;
     z-index: 1;
 }
+
+
+#header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+#mainnav ul.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+#mainnav ul.menu li a {
+    color: #1f8b4c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#mainnav ul.menu li.active a {
+    background: #2c6cb0;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+#logo img {
+    max-height: 65px;
+    width: auto;
+}
