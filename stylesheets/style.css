@@ -3644,3 +3644,137 @@ h6 { font-size: 16px; line-height: 18px; }
 .site-header .mainnav .menu li:not(.active) a:hover::after {
     width: 100%;
 }
+
+/* =====================================
+   HU-02 HERO INFO
+===================================== */
+
+.hero-info {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.hero-info-content {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-info-content h2 {
+    color: #0f172a;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-info-content p {
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f8fafc;
+    border-left: 4px solid #16a34a;
+    padding: 15px 25px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* ===== HU-03: Sección Quiénes Somos moderna ===== */
+
+.about-modern {
+    background: #f8fafc;
+    padding: 90px 0;
+}
+
+.about-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.about-header span {
+    color: #16a34a;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+
+.about-header h2 {
+    color: #0f172a;
+    font-size: 38px;
+    font-weight: 800;
+    margin: 12px 0 20px;
+    text-transform: uppercase;
+}
+
+.about-header p {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.about-icon {
+    width: 55px;
+    height: 55px;
+    background: #1f66ad;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.about-card h3 {
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header h2 {
+        font-size: 30px;
+    }
+}
