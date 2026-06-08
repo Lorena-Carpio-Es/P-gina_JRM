@@ -3572,3 +3572,75 @@ h6 { font-size: 16px; line-height: 18px; }
 .site-header .mainnav .menu li a:hover {
     color: #1f66ad;
 }
+
+/* ===== HU-01: Header moderno ===== */
+
+.site-header {
+    background: #ffffff;
+    padding: 14px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 999;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header .logo img {
+    max-height: 78px;
+    width: auto;
+    display: block;
+}
+
+.site-header .mainnav .menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header .mainnav .menu li a {
+    color: #087a38;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 14px 6px;
+    transition: all 0.3s ease;
+}
+
+.site-header .mainnav .menu li a:hover {
+    color: #1f66ad;
+}
+
+.site-header .mainnav .menu li.active a {
+    background: #1f66ad;
+    color: #ffffff !important;
+    padding: 22px 24px;
+    border-radius: 4px;
+}
+
+/* línea decorativa al pasar el mouse */
+.site-header .mainnav .menu li:not(.active) a {
+    position: relative;
+}
+
+.site-header .mainnav .menu li:not(.active) a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 3px;
+    background: #087a38;
+    transition: width 0.3s ease;
+}
+
+.site-header .mainnav .menu li:not(.active) a:hover::after {
+    width: 100%;
+}
