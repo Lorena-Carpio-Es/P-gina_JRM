@@ -3893,3 +3893,114 @@ h6 { font-size: 16px; line-height: 18px; }
         padding: 65px 0;
     }
 }
+
+/* ===== HU-05: Sección confianza / CTA ===== */
+
+.trust-section {
+    position: relative;
+    background-image: url("../images/slider/slide2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 110px 0;
+    overflow: hidden;
+}
+
+.trust-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(7, 37, 78, 0.90),
+        rgba(7, 37, 78, 0.70),
+        rgba(22, 163, 74, 0.55)
+    );
+    z-index: 1;
+}
+
+.trust-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    color: #ffffff;
+}
+
+.trust-content span {
+    display: inline-block;
+    color: #22c55e;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.trust-content h2 {
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.trust-content p {
+    color: #e5e7eb;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.trust-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 38px;
+}
+
+.trust-point {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.trust-button {
+    display: inline-block;
+    background: #16a34a;
+    color: #ffffff !important;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.trust-button:hover {
+    background: #1f66ad;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .trust-section {
+        padding: 80px 0;
+        background-attachment: scroll;
+    }
+
+    .trust-content h2 {
+        font-size: 32px;
+    }
+
+    .trust-content p {
+        font-size: 16px;
+    }
+
+    .trust-points {
+        flex-direction: column;
+    }
+}
