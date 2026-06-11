@@ -4372,3 +4372,174 @@ h6 { font-size: 16px; line-height: 18px; }
         padding: 65px 0;
     }
 }
+
+/* ===== HU-09: Ubicación moderna ===== */
+
+.location-modern {
+    background: #ffffff;
+    padding: 90px 0;
+}
+
+.location-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 55px;
+}
+
+.location-header span {
+    color: #16a34a;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+
+.location-header h2 {
+    color: #0b376d;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 12px 0 18px;
+}
+
+.location-header p {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.location-card {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 38px 34px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.location-card h3 {
+    color: #0b376d;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.location-card p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.location-detail {
+    border-left: 4px solid #16a34a;
+    padding-left: 15px;
+    margin-bottom: 18px;
+}
+
+.location-detail strong {
+    display: block;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.location-detail span {
+    color: #64748b;
+}
+
+.location-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #16a34a;
+    color: #ffffff !important;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.location-button:hover {
+    background: #1f66ad;
+    transform: translateY(-3px);
+}
+
+.location-map {
+    min-height: 420px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+    border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-header h2 {
+        font-size: 30px;
+    }
+
+    .location-modern {
+        padding: 65px 0;
+    }
+
+    .location-map {
+        min-height: 330px;
+    }
+}
+
+/* ===== Hero Contacto con imagen ===== */
+
+.contact-page-hero {
+    position: relative;
+    background-image: url("../images/contacto/contacto-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 115px 0;
+    overflow: hidden;
+}
+
+.contact-page-hero .section-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.62);
+    z-index: 1;
+}
+
+.contact-page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-page-hero .page-title-heading .title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.contact-page-hero .breadcrumbs ul li,
+.contact-page-hero .breadcrumbs ul li a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.contact-page-hero .breadcrumbs i {
+    color: #16a34a;
+}
+
+@media (max-width: 768px) {
+    .contact-page-hero {
+        padding: 80px 0;
+    }
+
+    .contact-page-hero .page-title-heading .title {
+        font-size: 36px;
+    }
+}
