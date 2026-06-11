@@ -4498,7 +4498,7 @@ h6 { font-size: 16px; line-height: 18px; }
 
 .contact-page-hero {
     position: relative;
-    background-image: url("../images/contacto/contacto-hero.jpg");
+    background-image: url("../images/contacto/Contacto-hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4607,4 +4607,37 @@ body .contact-info-card {
 
 body .contact-form-card {
     align-self: start !important;
+}
+
+/* FIX: imagen hero contacto */
+
+.page-title.contact-page-hero {
+    position: relative !important;
+    background-image: url("../images/contacto/Contacto-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    padding: 120px 0 !important;
+    overflow: hidden;
+}
+
+.page-title.contact-page-hero .section-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(15, 23, 42, 0.55) !important;
+    z-index: 1 !important;
+}
+
+.page-title.contact-page-hero .container {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.page-title.contact-page-hero .title {
+    color: #ffffff !important;
+}
+
+.page-title.contact-page-hero .breadcrumbs ul li,
+.page-title.contact-page-hero .breadcrumbs ul li a {
+    color: #ffffff !important;
 }
