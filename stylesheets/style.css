@@ -4272,7 +4272,7 @@ h6 { font-size: 16px; line-height: 18px; }
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     gap: 35px;
-    align-items: stretch;
+    align-items: start;
 }
 
 .contact-info-card,
@@ -4542,4 +4542,53 @@ h6 { font-size: 16px; line-height: 18px; }
     .contact-page-hero .page-title-heading .title {
         font-size: 36px;
     }
+}
+
+/* ===== Mapa dentro de contacto ===== */
+
+.contact-map-mini {
+    margin-top: 30px;
+}
+
+.contact-map-mini h4 {
+    color: #0b376d;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.contact-map-mini iframe {
+    width: 100%;
+    height: 260px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.contact-map-button {
+    display: inline-block;
+    margin-top: 18px;
+    background: #16a34a;
+    color: #ffffff !important;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.contact-map-button:hover {
+    background: #1f66ad;
+    transform: translateY(-3px);
+}
+
+/* Ajuste: evitar espacio vacío en tarjeta izquierda de contacto */
+
+.contact-info-card {
+    align-self: start;
+    height: auto;
+}
+
+.contact-form-card {
+    align-self: start;
 }
