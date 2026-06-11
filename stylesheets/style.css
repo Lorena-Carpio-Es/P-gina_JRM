@@ -4592,3 +4592,19 @@ h6 { font-size: 16px; line-height: 18px; }
 .contact-form-card {
     align-self: start;
 }
+
+/* FIX contacto: evitar que la tarjeta izquierda se estire */
+
+body .contact-grid {
+    align-items: start !important;
+}
+
+body .contact-info-card {
+    align-self: start !important;
+    height: auto !important;
+    min-height: auto !important;
+}
+
+body .contact-form-card {
+    align-self: start !important;
+}
